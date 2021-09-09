@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace Telefonnummerbok
 {
@@ -75,7 +76,7 @@ namespace Telefonnummerbok
             Console.Write("Enter name: ");
             string name = Console.ReadLine();
 
-            Console.Write("Enter number: ");
+            Console.Write("Enter number (+467XXXXXXXX): ");
             string number = Console.ReadLine();
 
             try
@@ -96,12 +97,12 @@ namespace Telefonnummerbok
         public PhoneBook()
         {
             // Creating mock data
-            Add("Ellen Gustafsson", "0741864262");
-            Add("Magnus Begic", "0755284319");
-            Add("Åsa Barsan", "0757896512");
-            Add("Kim Evasdottir", "0743547890");
-            Add("Örjan Fin", "0744653486");
-            Add("Robin Karlsson", "0747261272");
+            Add("Ellen Gustafsson", "+46741864262");
+            Add("Magnus Begic", "+46755284319");
+            Add("Åsa Barsan", "+46757896512");
+            Add("Kim Evasdottir", "+46743547890");
+            Add("Örjan Fin", "+46744653486");
+            Add("Robin Karlsson", "+46747261272");
         }
 
         private bool ValidateNumber(string number)
@@ -112,7 +113,12 @@ namespace Telefonnummerbok
                 return false;
             }
 
-            // Check that they are numbers
+            Regex regex = new Regex("(\\+467)[0-9]{8}");
+
+            if (!regex.IsMatch(number))
+            {
+                return false;
+            }
 
             return true;
         }
@@ -126,7 +132,7 @@ namespace Telefonnummerbok
 
             if (!ValidateNumber(number))
             {
-                throw new ArgumentException("Number is invalid");
+                throw new ArgumentException("Number is the wrong format");
             }
 
             sortedDic.Add(name.ToUpper(), number);
