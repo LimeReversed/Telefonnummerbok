@@ -10,9 +10,7 @@ namespace ConsoleApp_Telefonnummerbok
         static void Main(string[] args)
         {
             CultureInfo.CurrentCulture = new CultureInfo("se-SE", false);
-            PhoneBook book = new PhoneBook();
-            
-            
+            PhoneBook book = new PhoneBook();            
 
             while (true)
             {
