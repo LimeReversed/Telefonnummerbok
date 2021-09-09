@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telefonnummerbok", "Telefonnummerbok\Telefonnummerbok.csproj", "{3D1AB118-B9A4-464B-875A-00A3226F1EFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp_TelefonNummerBok", "Telefonnummerbok\ConsoleApp_TelefonNummerBok.csproj", "{3D1AB118-B9A4-464B-875A-00A3226F1EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Chamber", "Test_Chamber\Test_Chamber.csproj", "{55C7C609-3045-42B8-9442-58818918BD98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook", "PhoneBook\PhoneBook.csproj", "{9BDBB5F4-BD20-48A7-A459-2531A00EFDDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{3D1AB118-B9A4-464B-875A-00A3226F1EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D1AB118-B9A4-464B-875A-00A3226F1EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D1AB118-B9A4-464B-875A-00A3226F1EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55C7C609-3045-42B8-9442-58818918BD98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C7C609-3045-42B8-9442-58818918BD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C7C609-3045-42B8-9442-58818918BD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C7C609-3045-42B8-9442-58818918BD98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDBB5F4-BD20-48A7-A459-2531A00EFDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDBB5F4-BD20-48A7-A459-2531A00EFDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDBB5F4-BD20-48A7-A459-2531A00EFDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDBB5F4-BD20-48A7-A459-2531A00EFDDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
